@@ -8,4 +8,4 @@ const connectToDatabase = (
     || MONGO_DB_URL,
 ) => mongoose.connect(mongoDatabaseURI);
 
-export default connectToDatabase;
+export default connectToDatabase;s
