@@ -1,7 +1,6 @@
 import * as sinon from 'sinon';
 import chai from 'chai';
 import { ZodError } from 'zod';
-import { ErrorTypes } from '../../../errors/catalog';
 import Car from '../../../models/CarModel';
 import CarService from '../../../services/CarService';
 import { carMock } from '../../mocks/car.mock';
@@ -21,7 +20,7 @@ describe('Car Service', () => {
     });
 
     it('Success', async () => {
-      const newCar = await carModel.create(carMock.bodyMock);
+      const newCar = await carService.create(carMock.bodyMock);
 
       expect(newCar).to.be.deep.equal(carMock.responseMock);
     });
