@@ -20,7 +20,7 @@ abstract class MongoModel<T> implements IModel<T> {
   public async readOne(id:string):Promise<T | null> {
     if (!isValidObjectId(id)) throw Error(ErrorTypes.InvalidMongoId);
 
-    return this._model.findById({ id });
+    return this._model.findOne({ id });
   }
 
   public async update(id: string, obj:T):Promise<T | null> {
