@@ -1,7 +1,6 @@
 import * as sinon from 'sinon';
 import chai from 'chai';
 import Car from '../../../models/CarModel';
-import { Model } from 'mongoose';
 import { carMock } from '../../mocks/car.mock';
 const { expect } = chai;
 
@@ -10,7 +9,7 @@ describe('Car Model', () => {
 
   describe('Creating a car', () => {
     before(async () => {
-      sinon.stub(Model, 'create').resolves(carMock.responseMock);
+      sinon.stub(carModel, 'create').resolves(carMock.responseMock);
     });
   
     after(()=>{
