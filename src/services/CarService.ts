@@ -10,6 +10,10 @@ class CarService implements IService<ICar> {
     this._car = model;
   }
 
+  private static checkId(id: string) {
+    if (id.length < 24) throw new Error(ErrorTypes.InvalidMongoId);
+  }
+
   public async create(obj:unknown):Promise<ICar> {
     const parsed = CarZodSchema.safeParse(obj);
 
@@ -25,6 +29,7 @@ class CarService implements IService<ICar> {
   }
 
   public async readOne(id:string):Promise<ICar> {
+    CarService.checkId(id);
     const car = await this._car.readOne(id);
 
     if (!car) throw new Error(ErrorTypes.EntityNotFound);
