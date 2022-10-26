@@ -25,11 +25,11 @@ class CarService implements IService<ICar> {
   }
 
   public async readOne(id:string):Promise<ICar> {
-    const frame = await this._car.readOne(id);
+    const car = await this._car.readOne(id);
 
-    if (!frame) throw new Error(ErrorTypes.EntityNotFound);
+    if (!car) throw new Error(ErrorTypes.EntityNotFound);
 
-    return frame;
+    return car;
   }
 
   public async update(id: string, obj:unknown):Promise<ICar> {
@@ -40,7 +40,7 @@ class CarService implements IService<ICar> {
     }
 
     const updated = await this._car.update(id, parsed.data);
-
+   
     if (!updated) throw new Error(ErrorTypes.EntityNotFound);
 
     return updated;
