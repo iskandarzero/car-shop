@@ -1,10 +1,22 @@
-# :construction: README em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto.
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+# :car: Car Shop :motor_scooter:
+
+Car Shop é uma API que te possibilita usar e alterar informações sobre veículos. Tal projeto é realizado usando os princípios S.O.L.I.D e a programação orientada a objetos e permite ao usuário:
+  - Ler informações sobre carros e motos;
+  - Cadastrar ou alterar novos carros e motos;
+  - Deletar um carro ou moto especificado.
+  
+Para mais informações, consulte a [documentação](https://documenter.getpostman.com/view/23648000/2s8YRiKDSy).
+
+## Instruções para uso
+
+Instalar as dependências:
+
+  ```bash
+    npm install
+  ```
+
+Executar a aplicação:
+
+```bash
+  npm run dev
+```
