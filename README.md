@@ -1,6 +1,6 @@
 # :car: Car Shop :motor_scooter:
 
-Car Shop é uma API que te possibilita usar e alterar informações sobre veículos. Tal projeto é realizado usando os princípios S.O.L.I.D e a programação orientada a objetos e permite ao usuário:
+Car Shop é uma API que te possibilita usar e alterar informações sobre veículos. Esse projeto é realizado utilizando os princípios S.O.L.I.D e a programação orientada a objetos e permite ao usuário:
   - Ler informações sobre carros e motos;
   - Cadastrar ou alterar novos carros e motos;
   - Deletar um carro ou moto especificado.
